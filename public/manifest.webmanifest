@@ -1,0 +1,23 @@
+{
+  "name": "WanderMoon Travel Booking",
+  "short_name": "WanderMoon",
+  "description": "Browse and book travel packages.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7faf9",
+  "theme_color": "#0f9b8e",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
