@@ -1,12 +1,9 @@
-// The deployed site has no server (GitHub Pages, Netlify and Vercel host static files here),
-// so in the production build the "backend" runs inside the browser.
-// This replaces Axios's network step with a call to the same handleRequest()
-// function that the Vite dev server uses. The rest of the app does not change.
+
 import { AxiosError, CanceledError } from "axios";
 import { client } from "./client.js";
 import { handleRequest } from "../../server/mockApi.js";
 
-const DELAY = 500; // small delay so the loaders are visible, like the dev server
+const DELAY = 100; // small delay so the loaders are visible, like the dev server
 
 function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
